@@ -359,10 +359,10 @@
     <script src='../js/TweenMax.min.js'></script>
     <script src="../js/index.js"></script>
     <script>
-        $(window).onload(function() {
+        window.onload = function() {
             $('.scene').hide();
             $('.projects-container').show()
-        })
+        }
         $(window).scroll(function() {
             var scroH = $(window).scrollTop(); //滚动高度
             var viewH = $(window).height(); //可见高度
