@@ -10,11 +10,21 @@
     <script language="javascript" src="../js/modernizr.js"></script>
     <script language="javascript" src="../js/jquery-2.1.1.js"></script>
     <script language="javascript" src="../js/main.js"></script>
+    <script>
+        $(function() {
+                $('.scene').hide();
+                $('.projects-container').show()
+            })
+            // window.onload = function() {
+            //     $('.scene').hide();
+            //     $('.projects-container').show()
+            // }
+    </script>
     <title>阿杰</title>
 </head>
 
 <body>
-    <div class="scene">
+    <!-- <div class="scene">
         <svg version="1.1" id="dc-spinner" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width: "38" height: "38" viewBox="0 0 38 38" preserveAspectRatio="xMinYMin meet">
                 <text x="14" y="21" font-family="Monaco" font-size="2px" style="letter-spacing:0.6" fill="grey">LOADING
                    <animate 
@@ -58,7 +68,7 @@
                     repeatCount="indefinite" />
                   </path>
                 </svg>
-    </div>
+    </div> -->
     <div class="projects-container">
         <ul>
             <li>
@@ -268,52 +278,58 @@
                 <div class="cd-project-info">
                     <div class="time-show">
                         <div class="time-line">
-                            <a class="top" href=""><span class="circle"></span>day_01
+                            <a class="top" href="https://homework.wangzongjie.top/" target="_blank"><span class="circle"></span>day_01
                                 <div class="homework">
-                                    个人空间
+                                    诗意生活
                                     <img src="../images/icon1.png" alt="">
                                 </div>
                             </a>
-                            <a class="down" href=""><span class="circle"></span>day_02
+                            <a class="down" href="https://homework.wangzongjie.top/html/homework_02.html" target="_blank"><span class="circle"></span>day_02
                                 <div class="homework">
-                                    关于远大
+                                    个人空间
                                     <img src="../images/icon2.png" alt="">
                                 </div>
                             </a>
-                            <a class="top" href=""><span class="circle"></span>day_03
+                            <a class="top" href="https://homework.wangzongjie.top/html/homework_03.html" target="_blank"><span class="circle"></span>day_03
                                 <div class="homework">
-                                    木板信息
+                                    关于远大
                                     <img src="../images/icon3.png" alt="">
                                 </div>
                             </a>
-                            <a class="down" href=""><span class="circle"></span>day_04
+                            <a class="down" href="https://homework.wangzongjie.top/html/homeword_04.html" target="_blank"><span class="circle"></span>day_04
                                 <div class="homework">
-                                    木板评测
+                                    木板信息
                                     <img src="../images/icon4.png" alt="">
                                 </div>
                             </a>
-                            <a class="top" href=""><span class="circle"></span>day_05
+                            <a class="top" href="https://homework.wangzongjie.top/html/homework_05.html" target="_blank"><span class="circle"></span>day_05
                                 <div class="homework">
-                                    小米登录
+                                    木板评测
                                     <img src="../images/icon5.png" alt="">
                                 </div>
                             </a>
-                            <a class="down" href=""><span class="circle"></span>day_06
+                            <a class="down" href="https://homework.wangzongjie.top/html/homework_06.html" target="_blank"><span class="circle"></span>day_06
                                 <div class="homework">
-                                    个人中心
+                                    小米登录
                                     <img src="../images/icon6.png" alt="">
                                 </div>
                             </a>
-                            <a class="top" href=""><span class="circle"></span>day_07
+                            <a class="top" href="https://homework.wangzongjie.top/html/homework_07.html" target="_blank"><span class="circle"></span>day_07
                                 <div class="homework">
-                                    小米商城
+                                    个人中心
                                     <img src="../images/icon7.png" alt="">
                                 </div>
                             </a>
-                            <a class="down" href=""><span class="circle"></span>day_08
+                            <a class="down" href="https://homework.wangzongjie.top/html/shop(old).html" target="_blank"><span class="circle"></span>day_08
+                                <div class="homework">
+                                    小米商城
+                                    <img src="../images/icon8.png" alt="">
+                                </div>
+                            </a>
+                            <a class="top" href="https://homework.wangzongjie.top/html/index.html" target="_blank"><span class="circle"></span>day_09
                                 <div class="homework">
                                     木兮地板
-                                    <img src="../images/icon8.png" alt="">
+                                    <img src="../images/icon1.png" alt="">
                                 </div>
                             </a>
                         </div>
@@ -359,10 +375,6 @@
     <script src='../js/TweenMax.min.js'></script>
     <script src="../js/index.js"></script>
     <script>
-        window.onload = function() {
-            $('.scene').hide();
-            $('.projects-container').show()
-        }
         $(window).scroll(function() {
             var scroH = $(window).scrollTop(); //滚动高度
             var viewH = $(window).height(); //可见高度
